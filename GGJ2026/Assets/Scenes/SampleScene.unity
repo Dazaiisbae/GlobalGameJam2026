@@ -443,10 +443,10 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topLeft: {r: 1, g: 0.4009434, b: 0.4009434, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
@@ -2307,7 +2307,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 572190096549951222, guid: b2ab0d1fd2434e84bb710e5181012ed9, type: 3}
   - {fileID: 2631420172492299507, guid: a3cb97ec37a94fd48af41b4fd73c8f6a, type: 3}
-  spawnInterval: 5
+  spawnInterval: 15
   radius: 15
   rampEverySeconds: 20
   enemiesPerSpawn: 1

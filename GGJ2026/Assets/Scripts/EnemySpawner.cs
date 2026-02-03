@@ -3,14 +3,14 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
-    public float spawnInterval = 2f;
+    public float spawnInterval = 50f;
     public float radius = 15f;
 
     [Header("Difficulty Ramp")]
-    public float rampEverySeconds = 25f;     // how often difficulty increases
+    public float rampEverySeconds = 50f;     // how often difficulty increases
     public int enemiesPerSpawn = 1;          // start spawning 1 per tick
     public int enemiesPerRamp = 1;           // increase batch size by this amount
-    public float intervalDecrease = 0.2f;    // spawn faster each ramp
+    public float intervalDecrease = 0.1f;    // spawn faster each ramp
     public float minSpawnInterval = 0.5f;    // don't go faster than this
     public int maxEnemiesAlive = 40;         // cap so it doesn't explode
 

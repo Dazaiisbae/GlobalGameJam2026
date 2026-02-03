@@ -16,4 +16,10 @@ public class BestScoreUI : MonoBehaviour
         scoreText.text = "YOUR SCORE: " + lastScore;
         bestScoreText.text = "BEST SCORE: " + bestScore;
     }
+
+    public void UpdateText()
+    {
+        int bestScore = PlayerPrefs.GetInt("BestScore", 0);
+        bestScoreText.text = "BEST SCORE: " + bestScore;
+    }
 }
