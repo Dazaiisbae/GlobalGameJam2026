@@ -14,6 +14,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        var shield = GetComponent<PlayerShield>();
+        if (shield != null)
+            amount = shield.ModifyDamage(amount);
+
+
+
         currentHealth -= amount;
 
         Debug.Log("Player Health"+currentHealth);
