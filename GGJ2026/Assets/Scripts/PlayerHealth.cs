@@ -30,6 +30,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        currentHealth = Mathf.Min(maxHealth, currentHealth + amount);
+    }
+
     void Die()
     {
         //Destroy(gameObject);
